@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "name": "workout one",
+        "numCycles": 3,
+        "duration": 230,
+        "warmUp": {
+            "time": 60,
+            "color": "yellow",
+            "sound": "none",
+            "playlist": ""
+        },
+        "lowInt": {
+            "time": 120,
+            "color": "green",
+            "sound": "ding",
+            "playlist": ""
+        },
+        "highInt": {
+            "time": 30,
+            "color": "red",
+            "sound": "ding x2",
+            "playlist": ""
+        },
+        "coolDown": {
+            "time": 20,
+            "color": "blue",
+            "sound": "ring",
+            "playlist": ""
+        }
+    },
+    {
+        "id": 2,
+        "name": "workout two",
+        "numCycles": 5,
+        "duration": 50,
+        "warmUp": {
+            "time": 10,
+            "color": "yellow",
+            "sound": "none",
+            "playlist": ""
+        },
+        "lowInt": {
+            "time": 20,
+            "color": "green",
+            "sound": "ding",
+            "playlist": ""
+        },
+        "highInt": {
+            "time": 10,
+            "color": "red",
+            "sound": "ding x2",
+            "playlist": ""
+        },
+        "coolDown": {
+            "time": 10,
+            "color": "blue",
+            "sound": "ring",
+            "playlist": ""
+        }
+    }
+]
+
