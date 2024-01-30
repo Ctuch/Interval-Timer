@@ -45,6 +45,8 @@ struct WorkoutDetail: View {
             } label: {
                 IntervalRow(interval: workout.coolDown)
             }
+            WorkoutBarGraphic(workout: workout)
+                
         }
         //TODO: fix not being able to tap in middle
         .buttonStyle(.plain)

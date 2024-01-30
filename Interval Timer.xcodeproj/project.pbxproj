@@ -16,6 +16,7 @@
 		9F2F8FFF2B686A8000FF23A0 /* IntervalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F8FFE2B686A8000FF23A0 /* IntervalRow.swift */; };
 		9F2F90012B6872A300FF23A0 /* IntervalCycleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F90002B6872A300FF23A0 /* IntervalCycleRow.swift */; };
 		9F48FE162B69619D0052A828 /* IntervalEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE152B69619D0052A828 /* IntervalEditView.swift */; };
+		9F48FE1A2B6967210052A828 /* WorkoutBarGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE192B6967210052A828 /* WorkoutBarGraphic.swift */; };
 		9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */; };
 		9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7C2B61A60B00E3290C /* ContentView.swift */; };
 		9FBB0E7F2B61A60F00E3290C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7E2B61A60F00E3290C /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		9F2F8FFE2B686A8000FF23A0 /* IntervalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalRow.swift; sourceTree = "<group>"; };
 		9F2F90002B6872A300FF23A0 /* IntervalCycleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCycleRow.swift; sourceTree = "<group>"; };
 		9F48FE152B69619D0052A828 /* IntervalEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalEditView.swift; sourceTree = "<group>"; };
+		9F48FE192B6967210052A828 /* WorkoutBarGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutBarGraphic.swift; sourceTree = "<group>"; };
 		9FBB0E772B61A60B00E3290C /* Interval Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interval Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval_TimerApp.swift; sourceTree = "<group>"; };
 		9FBB0E7C2B61A60B00E3290C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F48FE182B6966C10052A828 /* CreateRoutine */ = {
+			isa = PBXGroup;
+			children = (
+				9F2F8FFC2B68631500FF23A0 /* NewWorkout.swift */,
+				9F2F8FFE2B686A8000FF23A0 /* IntervalRow.swift */,
+				9F2F90002B6872A300FF23A0 /* IntervalCycleRow.swift */,
+				9F48FE152B69619D0052A828 /* IntervalEditView.swift */,
+				9F48FE192B6967210052A828 /* WorkoutBarGraphic.swift */,
+			);
+			path = CreateRoutine;
+			sourceTree = "<group>";
+		};
 		9FBB0E6E2B61A60B00E3290C = {
 			isa = PBXGroup;
 			children = (
@@ -115,13 +129,10 @@
 		9FBB0E892B61A62200E3290C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9F2F8FFC2B68631500FF23A0 /* NewWorkout.swift */,
+				9F48FE182B6966C10052A828 /* CreateRoutine */,
 				9FBB0E9B2B61B6DC00E3290C /* Routines */,
 				9F26480E2B65C9FC00840A01 /* TimerCircleView.swift */,
 				9F2648142B65D59E00840A01 /* TimerDetailView.swift */,
-				9F2F8FFE2B686A8000FF23A0 /* IntervalRow.swift */,
-				9F2F90002B6872A300FF23A0 /* IntervalCycleRow.swift */,
-				9F48FE152B69619D0052A828 /* IntervalEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +231,7 @@
 				9FBB0E922B61ABE300E3290C /* WorkoutList.swift in Sources */,
 				9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */,
 				9FBB0E902B61A9A400E3290C /* ModelData.swift in Sources */,
+				9F48FE1A2B6967210052A828 /* WorkoutBarGraphic.swift in Sources */,
 				9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */,
 				9F2648112B65CD0000840A01 /* Interval.swift in Sources */,
 				9F48FE162B69619D0052A828 /* IntervalEditView.swift in Sources */,

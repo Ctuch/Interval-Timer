@@ -41,8 +41,8 @@ struct Workout: Hashable, Codable, Identifiable {
     }
     
     static func DisplayTime(timeSeconds: Int) -> String {
-        var minutes = timeSeconds / 60
-        var seconds = timeSeconds % 60
+        let minutes = timeSeconds / 60
+        let seconds = timeSeconds % 60
         
         return NSString(format: "%02d:%02d", minutes, seconds) as String
     }
