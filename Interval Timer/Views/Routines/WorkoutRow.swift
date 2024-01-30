@@ -15,7 +15,7 @@ struct WorkoutRow: View {
             Text(workout.name)
                 .fontWeight(.bold)
             Spacer()
-            Text(workout.formatTime)
+            Text(Workout.DisplayTime(timeSeconds: workout.duration))
         }
     }
 }

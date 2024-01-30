@@ -12,6 +12,10 @@
 		9F2648132B65D44A00840A01 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2648122B65D44A00840A01 /* Theme.swift */; };
 		9F2648152B65D59E00840A01 /* TimerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2648142B65D59E00840A01 /* TimerDetailView.swift */; };
 		9F2F8FF92B68290200FF23A0 /* WorkoutTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F8FF82B68290200FF23A0 /* WorkoutTimer.swift */; };
+		9F2F8FFD2B68631500FF23A0 /* NewWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F8FFC2B68631500FF23A0 /* NewWorkout.swift */; };
+		9F2F8FFF2B686A8000FF23A0 /* IntervalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F8FFE2B686A8000FF23A0 /* IntervalRow.swift */; };
+		9F2F90012B6872A300FF23A0 /* IntervalCycleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F90002B6872A300FF23A0 /* IntervalCycleRow.swift */; };
+		9F48FE162B69619D0052A828 /* IntervalEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE152B69619D0052A828 /* IntervalEditView.swift */; };
 		9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */; };
 		9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7C2B61A60B00E3290C /* ContentView.swift */; };
 		9FBB0E7F2B61A60F00E3290C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7E2B61A60F00E3290C /* Assets.xcassets */; };
@@ -30,6 +34,10 @@
 		9F2648122B65D44A00840A01 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9F2648142B65D59E00840A01 /* TimerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailView.swift; sourceTree = "<group>"; };
 		9F2F8FF82B68290200FF23A0 /* WorkoutTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimer.swift; sourceTree = "<group>"; };
+		9F2F8FFC2B68631500FF23A0 /* NewWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkout.swift; sourceTree = "<group>"; };
+		9F2F8FFE2B686A8000FF23A0 /* IntervalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalRow.swift; sourceTree = "<group>"; };
+		9F2F90002B6872A300FF23A0 /* IntervalCycleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCycleRow.swift; sourceTree = "<group>"; };
+		9F48FE152B69619D0052A828 /* IntervalEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalEditView.swift; sourceTree = "<group>"; };
 		9FBB0E772B61A60B00E3290C /* Interval Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interval Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval_TimerApp.swift; sourceTree = "<group>"; };
 		9FBB0E7C2B61A60B00E3290C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,9 +115,13 @@
 		9FBB0E892B61A62200E3290C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F2F8FFC2B68631500FF23A0 /* NewWorkout.swift */,
 				9FBB0E9B2B61B6DC00E3290C /* Routines */,
 				9F26480E2B65C9FC00840A01 /* TimerCircleView.swift */,
 				9F2648142B65D59E00840A01 /* TimerDetailView.swift */,
+				9F2F8FFE2B686A8000FF23A0 /* IntervalRow.swift */,
+				9F2F90002B6872A300FF23A0 /* IntervalCycleRow.swift */,
+				9F48FE152B69619D0052A828 /* IntervalEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,18 +215,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2F90012B6872A300FF23A0 /* IntervalCycleRow.swift in Sources */,
 				9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */,
 				9FBB0E922B61ABE300E3290C /* WorkoutList.swift in Sources */,
 				9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */,
 				9FBB0E902B61A9A400E3290C /* ModelData.swift in Sources */,
 				9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */,
 				9F2648112B65CD0000840A01 /* Interval.swift in Sources */,
+				9F48FE162B69619D0052A828 /* IntervalEditView.swift in Sources */,
 				9FBB0E9A2B61B1E900E3290C /* WorkoutRow.swift in Sources */,
+				9F2F8FFD2B68631500FF23A0 /* NewWorkout.swift in Sources */,
 				9F2648132B65D44A00840A01 /* Theme.swift in Sources */,
 				9F26480F2B65C9FC00840A01 /* TimerCircleView.swift in Sources */,
 				9F2F8FF92B68290200FF23A0 /* WorkoutTimer.swift in Sources */,
 				9FBB0E8E2B61A99700E3290C /* Workout.swift in Sources */,
 				9F2648152B65D59E00840A01 /* TimerDetailView.swift in Sources */,
+				9F2F8FFF2B686A8000FF23A0 /* IntervalRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
