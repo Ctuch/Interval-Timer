@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WorkoutDetail: View {
     @Binding var workout: Workout
+    @Environment(ModelData.self) var modelData
     @State private var isPresentingEditInterval = false
     @State private var editingInterval = Interval.defaultInterval
     

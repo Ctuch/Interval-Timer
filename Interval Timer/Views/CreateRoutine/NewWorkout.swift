@@ -26,6 +26,7 @@ struct NewWorkout: View {
                         Button("Add") {
                             isPresentingNewWorkoutView = false
                             modelData.workouts.append(newWorkout)
+                            write(array: modelData.workouts, filename: "workouts.json")
                         }
                     }
                 }
