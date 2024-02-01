@@ -5,24 +5,28 @@
         "numCycles": 3,
         "duration": 230,
         "warmUp": {
+            "name": "Warm Up",
             "time": 60,
             "color": "yellow",
             "sound": "none",
             "playlist": ""
         },
         "lowInt": {
+            "name": "Low Intensity",
             "time": 120,
             "color": "green",
             "sound": "ding",
             "playlist": ""
         },
         "highInt": {
+            "name": "High Intensity",
             "time": 30,
             "color": "red",
             "sound": "ding x2",
             "playlist": ""
         },
         "coolDown": {
+            "name": "Cool Down",
             "time": 20,
             "color": "blue",
             "sound": "ring",
@@ -35,24 +39,28 @@
         "numCycles": 5,
         "duration": 50,
         "warmUp": {
+            "name": "Warm Up",
             "time": 10,
             "color": "yellow",
             "sound": "none",
             "playlist": ""
         },
         "lowInt": {
+            "name": "Low Intensity",
             "time": 20,
             "color": "green",
             "sound": "ding",
             "playlist": ""
         },
         "highInt": {
+            "name": "High Intensity",
             "time": 10,
             "color": "red",
             "sound": "ding x2",
             "playlist": ""
         },
         "coolDown": {
+            "name": "Cool Down",
             "time": 10,
             "color": "blue",
             "sound": "ring",

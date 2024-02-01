@@ -17,20 +17,11 @@ struct Workout: Hashable, Codable, Identifiable {
     var highInt: Interval
     var coolDown: Interval
     
-    var minutes: Int {
-        duration / 60
-    }
-    var seconds: Int {
-        duration % 60
-    }
     
-    var formatTime: String {
-        return NSString(format: "%02d:%02d", minutes, seconds) as String
-    }
     
     var sequence: [Interval] {
         var temp = [warmUp]
-        for i in 1...numCycles {
+        for _ in 1...numCycles {
             temp.append(lowInt)
             temp.append(highInt)
         }
@@ -38,4 +29,30 @@ struct Workout: Hashable, Codable, Identifiable {
         return temp
     }
     
+    init(id: Int = 0, name: String = "", duration: Int = 300, numCycles: Int = 1, warmUp: Interval, lowInt: Interval, highInt: Interval, coolDown: Interval) {
+        self.id = id
+        self.name = name
+        self.duration = duration
+        self.numCycles = numCycles
+        self.warmUp = warmUp
+        self.lowInt = lowInt
+        self.highInt = highInt
+        self.coolDown = coolDown
+    }
+    
+    static func DisplayTime(timeSeconds: Int) -> String {
+        let minutes = timeSeconds / 60
+        let seconds = timeSeconds % 60
+        
+        return NSString(format: "%02d:%02d", minutes, seconds) as String
+    }
+}
+
+extension Workout {
+    static var defaultWorkout: Workout {
+        Workout(warmUp: Interval(name: .warmUp, time: 60, color: .yellow, sound: .none, playlist: ""),
+                lowInt: Interval(name: .lowInt, time: 120, color: .green, sound: .ding2, playlist: ""),
+                highInt: Interval(name: .highInt, time: 60, color: .red, sound: .ding, playlist: ""),
+                coolDown: Interval(name: .coolDown, time: 60, color: .blue, sound: .ring, playlist: ""))
+    }
 }

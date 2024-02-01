@@ -9,6 +9,9 @@ import SwiftUI
 
 struct WorkoutList: View {
     @Environment(ModelData.self) var modelData
+    @State private var isPresentingNewRoutine = false
+    @State private var newRoutine = Workout.defaultWorkout
+    
     var body: some View {
         NavigationSplitView {
             List {
@@ -24,10 +27,13 @@ struct WorkoutList: View {
             .navigationTitle("Routines")
             .toolbar {
                 Button {
-                    //showingProfile.toggle()
+                    isPresentingNewRoutine.toggle()
                 } label: {
-                    Label("User Profile", systemImage: "plus.circle.fill")
+                    Label("User Profile", systemImage: "plus")
                 }
+            }
+            .sheet(isPresented: $isPresentingNewRoutine) {
+                NewWorkout(isPresentingNewWorkoutView: $isPresentingNewRoutine)
             }
         } detail: {
             Text("Select a Routine")
