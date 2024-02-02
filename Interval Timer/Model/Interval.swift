@@ -14,13 +14,6 @@ struct Interval: Hashable, Codable {
     var sound: Sound
     var playlist: String
     
-    enum Sound: String, CaseIterable, Codable {
-        case ding = "ding"
-        case ding2 = "ding x2"
-        case ring = "ring"
-        case none = "none"
-    }
-    
     enum IntervalType: String, CaseIterable, Codable {
         case warmUp = "Warm Up"
         case lowInt = "Low Intensity"

@@ -37,31 +37,31 @@
         "id": 2,
         "name": "workout two",
         "numCycles": 5,
-        "duration": 50,
+        "duration": 307,
         "warmUp": {
             "name": "Warm Up",
-            "time": 10,
+            "time": 2,
             "color": "yellow",
             "sound": "none",
             "playlist": ""
         },
         "lowInt": {
             "name": "Low Intensity",
-            "time": 20,
+            "time": 5,
             "color": "green",
             "sound": "ding",
             "playlist": ""
         },
         "highInt": {
             "name": "High Intensity",
-            "time": 10,
+            "time": 7,
             "color": "red",
             "sound": "ding x2",
             "playlist": ""
         },
         "coolDown": {
             "name": "Cool Down",
-            "time": 10,
+            "time": 5,
             "color": "blue",
             "sound": "ring",
             "playlist": ""

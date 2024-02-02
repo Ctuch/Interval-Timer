@@ -20,6 +20,8 @@
 		9F48FE1C2B696F910052A828 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE1B2B696F910052A828 /* TimePicker.swift */; };
 		9F48FE1F2B6978210052A828 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE1E2B6978210052A828 /* ColorPicker.swift */; };
 		9F48FE212B697B210052A828 /* SoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE202B697B210052A828 /* SoundPicker.swift */; };
+		9F66B1B32B6D647900A066F3 /* AVExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B1B22B6D647900A066F3 /* AVExtensions.swift */; };
+		9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B1B42B6D655D00A066F3 /* Sound.swift */; };
 		9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */; };
 		9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7C2B61A60B00E3290C /* ContentView.swift */; };
 		9FBB0E7F2B61A60F00E3290C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7E2B61A60F00E3290C /* Assets.xcassets */; };
@@ -30,6 +32,11 @@
 		9FBB0E922B61ABE300E3290C /* WorkoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E912B61ABE300E3290C /* WorkoutList.swift */; };
 		9FBB0E9A2B61B1E900E3290C /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E992B61B1E900E3290C /* WorkoutRow.swift */; };
 		9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E9C2B61B71000E3290C /* WorkoutDetail.swift */; };
+		9FFFBA072B6C6D9F003D59E8 /* ding x2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA012B6C6D9F003D59E8 /* ding x2.wav */; };
+		9FFFBA082B6C6DA0003D59E8 /* alien.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA022B6C6D9F003D59E8 /* alien.wav */; };
+		9FFFBA092B6C6DA0003D59E8 /* fifteen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA032B6C6D9F003D59E8 /* fifteen.wav */; };
+		9FFFBA0A2B6C6DA0003D59E8 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA042B6C6D9F003D59E8 /* ring.wav */; };
+		9FFFBA0B2B6C6DA0003D59E8 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA052B6C6D9F003D59E8 /* ding.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,8 @@
 		9F48FE1B2B696F910052A828 /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		9F48FE1E2B6978210052A828 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		9F48FE202B697B210052A828 /* SoundPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPicker.swift; sourceTree = "<group>"; };
+		9F66B1B22B6D647900A066F3 /* AVExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVExtensions.swift; sourceTree = "<group>"; };
+		9F66B1B42B6D655D00A066F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		9FBB0E772B61A60B00E3290C /* Interval Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interval Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval_TimerApp.swift; sourceTree = "<group>"; };
 		9FBB0E7C2B61A60B00E3290C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +66,11 @@
 		9FBB0E912B61ABE300E3290C /* WorkoutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutList.swift; sourceTree = "<group>"; };
 		9FBB0E992B61B1E900E3290C /* WorkoutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
 		9FBB0E9C2B61B71000E3290C /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
+		9FFFBA012B6C6D9F003D59E8 /* ding x2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ding x2.wav"; sourceTree = "<group>"; };
+		9FFFBA022B6C6D9F003D59E8 /* alien.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alien.wav; sourceTree = "<group>"; };
+		9FFFBA032B6C6D9F003D59E8 /* fifteen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fifteen.wav; sourceTree = "<group>"; };
+		9FFFBA042B6C6D9F003D59E8 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
+		9FFFBA052B6C6D9F003D59E8 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +152,8 @@
 				9F2648102B65CD0000840A01 /* Interval.swift */,
 				9F2648122B65D44A00840A01 /* Theme.swift */,
 				9F2F8FF82B68290200FF23A0 /* WorkoutTimer.swift */,
+				9F66B1B22B6D647900A066F3 /* AVExtensions.swift */,
+				9F66B1B42B6D655D00A066F3 /* Sound.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +173,11 @@
 		9FBB0E8A2B61A96000E3290C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9FFFBA022B6C6D9F003D59E8 /* alien.wav */,
+				9FFFBA012B6C6D9F003D59E8 /* ding x2.wav */,
+				9FFFBA052B6C6D9F003D59E8 /* ding.wav */,
+				9FFFBA032B6C6D9F003D59E8 /* fifteen.wav */,
+				9FFFBA042B6C6D9F003D59E8 /* ring.wav */,
 				9FBB0E8B2B61A97000E3290C /* workouts.json */,
 			);
 			path = Resources;
@@ -231,8 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBB0E8C2B61A97000E3290C /* workouts.json in Resources */,
+				9FFFBA0A2B6C6DA0003D59E8 /* ring.wav in Resources */,
 				9FBB0E822B61A60F00E3290C /* Preview Assets.xcassets in Resources */,
+				9FFFBA092B6C6DA0003D59E8 /* fifteen.wav in Resources */,
 				9FBB0E7F2B61A60F00E3290C /* Assets.xcassets in Resources */,
+				9FFFBA082B6C6DA0003D59E8 /* alien.wav in Resources */,
+				9FFFBA0B2B6C6DA0003D59E8 /* ding.wav in Resources */,
+				9FFFBA072B6C6D9F003D59E8 /* ding x2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2F90012B6872A300FF23A0 /* IntervalCycleRow.swift in Sources */,
+				9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */,
 				9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */,
 				9FBB0E922B61ABE300E3290C /* WorkoutList.swift in Sources */,
 				9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */,
@@ -253,6 +280,7 @@
 				9F48FE212B697B210052A828 /* SoundPicker.swift in Sources */,
 				9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */,
 				9F2648112B65CD0000840A01 /* Interval.swift in Sources */,
+				9F66B1B32B6D647900A066F3 /* AVExtensions.swift in Sources */,
 				9F48FE162B69619D0052A828 /* IntervalEditView.swift in Sources */,
 				9FBB0E9A2B61B1E900E3290C /* WorkoutRow.swift in Sources */,
 				9F48FE1F2B6978210052A828 /* ColorPicker.swift in Sources */,

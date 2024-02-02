@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct TimerDetailView: View {
     @Environment(ModelData.self) var modelData
@@ -18,7 +19,6 @@ struct TimerDetailView: View {
                 .fill(workout.sequence[workoutTimer.intervalIndex].color.mainColor)
             VStack {
                 TimerCircleView(secondsRemaining: workoutTimer.secondsRemaining)
-                Text("hello")
             }
             
         }
@@ -32,11 +32,27 @@ struct TimerDetailView: View {
     
     private func startWorkout() {
         workoutTimer.reset(intervals: workout.sequence)
+        workoutTimer.intervalChangedAction = {
+            var player = getPlayer(sound: workout.sequence[workoutTimer.intervalIndex].sound)
+            player.seek(to: .zero)
+            player.play()
+        }
         workoutTimer.startTimer()
+        
     }
     
     private func endWorkout() {
         workoutTimer.stopTimer()
+    }
+    
+    private func getPlayer(sound: Sound) -> AVPlayer {
+        switch sound {
+        case .alien: return AVPlayer.sharedAlienPlayer
+        case .ding: return AVPlayer.sharedDingPlayer
+        case .ding2: return AVPlayer.sharedDing2Player
+        case .ring: return AVPlayer.sharedRingPlayer
+        case .none: return AVPlayer.sharedRingPlayer
+        }
     }
 }
 

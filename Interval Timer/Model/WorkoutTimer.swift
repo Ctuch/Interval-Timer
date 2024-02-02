@@ -15,6 +15,8 @@ final class WorkoutTimer: ObservableObject {
     
     private(set) var intervals: [Interval]
     
+    var intervalChangedAction: (() -> Void)?
+    
     private weak var timer: Timer?
     private var timerStopped = false
     private var lengthInSeconds = 0
@@ -58,6 +60,7 @@ final class WorkoutTimer: ObservableObject {
             // Can also play the warning if less than 30 s and lowInt and warnings enabled
             if secondsRemaining == 0 {
                 changeToInterval(at: intervalIndex + 1)
+                intervalChangedAction?()
                 // Play sound?? -> see callback fn
             }
         }
