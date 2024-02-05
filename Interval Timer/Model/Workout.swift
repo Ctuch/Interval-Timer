@@ -10,14 +10,15 @@ import Foundation
 struct Workout: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    var duration: Int
     var numCycles: Int
     var warmUp: Interval
     var lowInt: Interval
     var highInt: Interval
     var coolDown: Interval
     
-    
+    var duration: Int {
+        return warmUp.time + numCycles * (lowInt.time + highInt.time) + coolDown.time
+    }
     
     var sequence: [Interval] {
         var temp = [warmUp]
@@ -32,7 +33,6 @@ struct Workout: Hashable, Codable, Identifiable {
     init(id: Int = 0, name: String = "", duration: Int = 300, numCycles: Int = 1, warmUp: Interval, lowInt: Interval, highInt: Interval, coolDown: Interval) {
         self.id = id
         self.name = name
-        self.duration = duration
         self.numCycles = numCycles
         self.warmUp = warmUp
         self.lowInt = lowInt

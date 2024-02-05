@@ -3,7 +3,6 @@
         "id": 1,
         "name": "workout one",
         "numCycles": 3,
-        "duration": 230,
         "warmUp": {
             "name": "Warm Up",
             "time": 60,
@@ -37,7 +36,6 @@
         "id": 2,
         "name": "workout two",
         "numCycles": 5,
-        "duration": 307,
         "warmUp": {
             "name": "Warm Up",
             "time": 2,
@@ -54,7 +52,7 @@
         },
         "highInt": {
             "name": "High Intensity",
-            "time": 20,
+            "time": 7,
             "color": "red",
             "sound": "ding x2",
             "playlist": ""
