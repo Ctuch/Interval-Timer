@@ -9,7 +9,7 @@ import Foundation
 
 @Observable
 class ModelData {
-    var workouts: [Workout] = load("workouts.json")
+    var workouts: [Workout] = loadLocal("workouts.json") // Load local for testing purposes only
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

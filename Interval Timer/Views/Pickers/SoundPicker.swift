@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct SoundPicker: View {
-    @Binding var selection: Interval.Sound
+    @Binding var selection: Sound
     var body: some View {
         Picker("Sound", selection: $selection) {
-            ForEach(Interval.Sound.allCases, id: \.self) { sound in
-                Text(sound.rawValue)
+            ForEach(Sound.allCases, id: \.self) { sound in
+                Text(sound.name)
                     .tag(sound)
             }
         }
