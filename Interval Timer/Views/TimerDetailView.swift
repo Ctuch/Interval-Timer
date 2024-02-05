@@ -33,7 +33,7 @@ struct TimerDetailView: View {
     private func startWorkout() {
         workoutTimer.reset(intervals: workout.sequence)
         workoutTimer.intervalChangedAction = {
-            var player = getPlayer(sound: workout.sequence[workoutTimer.intervalIndex].sound)
+            let player = getPlayer(sound: workout.sequence[workoutTimer.intervalIndex].sound)
             player.seek(to: .zero)
             player.play()
         }

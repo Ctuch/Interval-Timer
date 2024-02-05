@@ -54,7 +54,7 @@
         },
         "highInt": {
             "name": "High Intensity",
-            "time": 7,
+            "time": 20,
             "color": "red",
             "sound": "ding x2",
             "playlist": ""

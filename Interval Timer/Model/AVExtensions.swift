@@ -28,4 +28,9 @@ extension AVPlayer {
         guard let url = Bundle.main.url(forResource: "alien", withExtension: "wav") else { fatalError("Failed to find sound file.") }
         return AVPlayer(url: url)
     }()
+    
+    static let sharedFifteenPlayer: AVPlayer = {
+        guard let url = Bundle.main.url(forResource: "fifteen", withExtension: "wav") else { fatalError("Failed to find sound file.") }
+        return AVPlayer(url: url)
+    }()
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVFoundation
 
 @MainActor
 final class WorkoutTimer: ObservableObject {
@@ -57,6 +58,11 @@ final class WorkoutTimer: ObservableObject {
             guard let startDate, !timerStopped else {return}
             let secondsElapsed = Int(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)
             secondsRemaining = max(lengthInSeconds - secondsElapsed, 0)
+            if secondsRemaining == 15 {
+                let player = AVPlayer.sharedFifteenPlayer
+                player.seek(to: .zero)
+                player.play()
+            }
             // Can also play the warning if less than 30 s and lowInt and warnings enabled
             if secondsRemaining == 0 {
                 changeToInterval(at: intervalIndex + 1)
