@@ -21,6 +21,7 @@
 		9F48FE1F2B6978210052A828 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE1E2B6978210052A828 /* ColorPicker.swift */; };
 		9F48FE212B697B210052A828 /* SoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE202B697B210052A828 /* SoundPicker.swift */; };
 		9F6456062B729B37000042DA /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6456052B729B37000042DA /* SpotifyiOS.framework */; };
+		9F64560D2B72A1FE000042DA /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F64560C2B72A1FE000042DA /* SpotifyController.swift */; };
 		9F66B1B32B6D647900A066F3 /* AVExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B1B22B6D647900A066F3 /* AVExtensions.swift */; };
 		9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B1B42B6D655D00A066F3 /* Sound.swift */; };
 		9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */; };
@@ -57,6 +58,7 @@
 		9F6456052B729B37000042DA /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		9F6456072B729C34000042DA /* Interval-Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Interval-Timer-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9F6456082B729E23000042DA /* Interval Timer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Interval Timer-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F64560C2B72A1FE000042DA /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
 		9F66B1B22B6D647900A066F3 /* AVExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVExtensions.swift; sourceTree = "<group>"; };
 		9F66B1B42B6D655D00A066F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		9FBB0E772B61A60B00E3290C /* Interval Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interval Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,14 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F64560B2B72A1C0000042DA /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				9F64560C2B72A1FE000042DA /* SpotifyController.swift */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
 		9FBB0E6E2B61A60B00E3290C = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +149,11 @@
 		9FBB0E792B61A60B00E3290C /* Interval Timer */ = {
 			isa = PBXGroup;
 			children = (
-				9F6456072B729C34000042DA /* Interval-Timer-Info.plist */,
 				9FBB0E8A2B61A96000E3290C /* Resources */,
+				9F64560B2B72A1C0000042DA /* Spotify */,
 				9FBB0E892B61A62200E3290C /* Views */,
 				9FBB0E882B61A61900E3290C /* Model */,
+				9F6456072B729C34000042DA /* Interval-Timer-Info.plist */,
 				9FBB0E7A2B61A60B00E3290C /* Interval_TimerApp.swift */,
 				9FBB0E7C2B61A60B00E3290C /* ContentView.swift */,
 				9FBB0E7E2B61A60F00E3290C /* Assets.xcassets */,
@@ -290,6 +301,7 @@
 				9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */,
 				9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */,
 				9FBB0E922B61ABE300E3290C /* WorkoutList.swift in Sources */,
+				9F64560D2B72A1FE000042DA /* SpotifyController.swift in Sources */,
 				9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */,
 				9FBB0E902B61A9A400E3290C /* ModelData.swift in Sources */,
 				9F48FE1A2B6967210052A828 /* WorkoutBarGraphic.swift in Sources */,
@@ -442,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Interval Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = XSV4GSMY3V;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +467,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Interval Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = XSV4GSMY3V;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,6 +506,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
