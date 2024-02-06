@@ -8,11 +8,17 @@
 import Foundation
 import Combine
 
-class SpotifyController: NSObject, ObservableObject, SPTAppRemotePlayerStateDelegate {
+
+class SpotifyController: NSObject, ObservableObject {
+    static let sharedSpotify = SpotifyController()
+    
     let spotifyClientID = "73a0abee949b47dd96c45dd8afdce012"
     let spotifyRedirectURL = URL(string:"spotify-ios-quick-start://spotify-login-callback")!
         
     var accessToken: String? = nil
+    
+    @Published var currentSong = Track(name: "Test name", artist: "Test artist")
+    @Published var isPaused = false
     
     var playURI = ""
     
@@ -95,8 +101,13 @@ extension SpotifyController: SPTAppRemoteDelegate {
     func appRemote(_ appRemote: SPTAppRemote, didDisconnectWithError error: Error?) {
         print("disconnected")
     }
-    
+}
+
+extension SpotifyController: SPTAppRemotePlayerStateDelegate {
     func playerStateDidChange(_ playerState: SPTAppRemotePlayerState) {
         print("state changed")
+        currentSong.name = playerState.track.name
+        currentSong.artist = playerState.track.artist.name
+        print(currentSong.name, currentSong.artist)
     }
 }

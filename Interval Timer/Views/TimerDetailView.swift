@@ -19,6 +19,8 @@ struct TimerDetailView: View {
                 .fill(workout.sequence[workoutTimer.intervalIndex].color.mainColor)
             VStack {
                 TimerCircleView(secondsRemaining: workoutTimer.secondsRemaining)
+                SpotifyDisplay()
+                    .padding([.bottom], 50)
             }
             
         }
