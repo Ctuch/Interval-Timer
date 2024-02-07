@@ -20,7 +20,7 @@ struct SpotifyDisplay: View {
                 .font(.title2)
             HStack {
                 Button {
-                    // go to last song
+                    spotifyController.appRemote.playerAPI?.skip(toPrevious: nil)
                 } label: {
                     Image(systemName: "backward.fill")
                         .resizable()
@@ -29,9 +29,14 @@ struct SpotifyDisplay: View {
                 .buttonStyle(.plain)
                 
                 Button {
-                    // play/pause music
+                    if (spotifyController.isPaused) {
+                        spotifyController.appRemote.playerAPI?.resume(nil)
+                    }
+                    else {
+                        spotifyController.appRemote.playerAPI?.pause(nil)
+                    }
                 } label: {
-                    Image(systemName: spotifyController.isPaused ? "pause.fill" : "play.fill")
+                    Image(systemName: spotifyController.isPaused ? "play.fill" : "pause.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 }
@@ -39,7 +44,7 @@ struct SpotifyDisplay: View {
                 .padding()
                 
                 Button {
-                    // go to next song
+                    spotifyController.appRemote.playerAPI?.skip(toNext: nil) //Can add callbacks!
                 } label: {
                     Image(systemName: "forward.fill")
                         .resizable()

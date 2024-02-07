@@ -12,7 +12,7 @@ import Combine
 class SpotifyController: NSObject, ObservableObject {
     static let sharedSpotify = SpotifyController()
     
-    let spotifyClientID = "73a0abee949b47dd96c45dd8afdce012"
+    let spotifyClientID = "" // Your Client ID
     let spotifyRedirectURL = URL(string:"spotify-ios-quick-start://spotify-login-callback")!
         
     var accessToken: String? = nil
@@ -108,6 +108,7 @@ extension SpotifyController: SPTAppRemotePlayerStateDelegate {
         print("state changed")
         currentSong.name = playerState.track.name
         currentSong.artist = playerState.track.artist.name
+        isPaused = playerState.isPaused
         print(currentSong.name, currentSong.artist)
     }
 }
