@@ -96,7 +96,8 @@ final class SpotifyController: ObservableObject {
                 .userReadPlaybackState,
                 .userModifyPlaybackState,
                 .playlistReadPrivate,
-                .playlistReadCollaborative
+                .playlistReadCollaborative,
+                .userReadCurrentlyPlaying
             ]
         )!
         
