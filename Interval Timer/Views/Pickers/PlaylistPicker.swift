@@ -12,9 +12,9 @@ import SpotifyWebAPI
 struct PlaylistPicker: View {
     @EnvironmentObject var spotify: SpotifyController
     
-    @Binding var playlist: String //TODO: store relevant factors about the playlist (URI, name), update JSON
+    @Binding var playlist: PlaylistInfo
     
-    @State private var playlists: [Playlist<PlaylistItemsReference>] = []
+    @State private var playlists: [Playlist<PlaylistItemsReference>] = [] //TODO: just record playlistInfo??
     @State private var isLoadingPlaylists = false
     
     @State private var cancellables: Set<AnyCancellable> = []
@@ -31,6 +31,7 @@ struct PlaylistPicker: View {
                 Picker("Playlist", selection: $playlist) {
                     ForEach(playlists, id: \.self) {playlist in
                         Text(playlist.name)
+                            .tag(PlaylistInfo(name: playlist.name, uri: playlist.uri))
                     }
                 }.pickerStyle(.menu)
             }
@@ -39,22 +40,26 @@ struct PlaylistPicker: View {
     }
     
     func getPlaylists() {
-        self.isLoadingPlaylists = true
-        self.playlists = []
-        spotify.api.currentUserPlaylists(limit: 50)
-            .extendPages(spotify.api)
-            .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { completion in
-                self.isLoadingPlaylists = false
-                if case .failure(let error) = completion {
-                    print("failed to get playlists", error.localizedDescription)
-                }
-            }, receiveValue: { playlistPage in
-                let playlists = playlistPage.items
-                self.playlists.append(contentsOf: playlists)
-            })
-            .store(in: &cancellables)
-        //TODO: decide to filter out playlists made by spotify? Order the results?
+        if self.playlists.count > 0 {
+            return
+        } else {
+            self.isLoadingPlaylists = true
+            self.playlists = []
+            spotify.api.currentUserPlaylists(limit: 50)
+                .extendPages(spotify.api)
+                .receive(on: RunLoop.main)
+                .sink(receiveCompletion: { completion in
+                    self.isLoadingPlaylists = false
+                    if case .failure(let error) = completion {
+                        print("failed to get playlists", error.localizedDescription)
+                    }
+                }, receiveValue: { playlistPage in
+                    let playlists = playlistPage.items
+                    self.playlists.append(contentsOf: playlists)
+                })
+                .store(in: &cancellables)
+            //TODO: decide to filter out playlists made by spotify? Order the results?
+        }
     }
 }
 
