@@ -2,7 +2,8 @@
 //  Track.swift
 //  Interval Timer
 //
-//  Created by Clare Tuch on 2/8/24.
+
+//  Created by Clare Tuch on 2/6/24.
 //
 
 import Foundation
