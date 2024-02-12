@@ -33,7 +33,7 @@ final class SpotifyController: ObservableObject {
     let authorizationManagerKey = "authorizationManager"
     
     let loginCallbackURL = URL(
-        string: "interval-timer-login://callback"
+        string: "interval-timer-login://web-callback"
     )!
     
     var authorizationState = String.randomURLSafe(length: 128)
