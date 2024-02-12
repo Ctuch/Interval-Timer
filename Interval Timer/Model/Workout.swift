@@ -50,9 +50,9 @@ struct Workout: Hashable, Codable, Identifiable {
 
 extension Workout {
     static var defaultWorkout: Workout {
-        Workout(warmUp: Interval(name: .warmUp, time: 60, color: .yellow, sound: .none, playlist: ""),
-                lowInt: Interval(name: .lowInt, time: 120, color: .green, sound: .ding2, playlist: ""),
-                highInt: Interval(name: .highInt, time: 60, color: .red, sound: .ding, playlist: ""),
-                coolDown: Interval(name: .coolDown, time: 60, color: .blue, sound: .ring, playlist: ""))
+        Workout(warmUp: Interval(name: .warmUp, time: 60, color: .yellow, sound: .none, playlist: PlaylistInfo(name: "", uri: "")),
+                lowInt: Interval(name: .lowInt, time: 120, color: .green, sound: .ding2, playlist: PlaylistInfo(name: "", uri: "")),
+                highInt: Interval(name: .highInt, time: 60, color: .red, sound: .ding, playlist: PlaylistInfo(name: "", uri: "")),
+                coolDown: Interval(name: .coolDown, time: 60, color: .blue, sound: .ring, playlist: PlaylistInfo(name: "", uri: "")))
     }
 }

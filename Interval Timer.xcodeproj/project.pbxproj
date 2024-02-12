@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F243D472B756C4800BC529E /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243D462B756C4800BC529E /* SpotifyController.swift */; };
 		9F26480F2B65C9FC00840A01 /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F26480E2B65C9FC00840A01 /* TimerCircleView.swift */; };
 		9F2648112B65CD0000840A01 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2648102B65CD0000840A01 /* Interval.swift */; };
 		9F2648132B65D44A00840A01 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2648122B65D44A00840A01 /* Theme.swift */; };
@@ -36,6 +37,12 @@
 		9FBB0E922B61ABE300E3290C /* WorkoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E912B61ABE300E3290C /* WorkoutList.swift */; };
 		9FBB0E9A2B61B1E900E3290C /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E992B61B1E900E3290C /* WorkoutRow.swift */; };
 		9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB0E9C2B61B71000E3290C /* WorkoutDetail.swift */; };
+		9FF43B9F2B7580A300E25319 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF43B9E2B7580A300E25319 /* SpotifyAPI */; };
+		9FF43BA12B75846900E25319 /* SpotifyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF43BA02B75846900E25319 /* SpotifyDisplay.swift */; };
+		9FF43BA32B7584B200E25319 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF43BA22B7584B200E25319 /* Track.swift */; };
+		9FF43BA62B758C9A00E25319 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF43BA52B758C9A00E25319 /* KeychainAccess */; };
+		9FF43BAD2B75A74400E25319 /* PlaylistPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF43BAC2B75A74400E25319 /* PlaylistPicker.swift */; };
+		9FF43BAF2B75B25000E25319 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF43BAE2B75B25000E25319 /* Playlist.swift */; };
 		9FFFBA072B6C6D9F003D59E8 /* ding x2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA012B6C6D9F003D59E8 /* ding x2.wav */; };
 		9FFFBA082B6C6DA0003D59E8 /* alien.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA022B6C6D9F003D59E8 /* alien.wav */; };
 		9FFFBA092B6C6DA0003D59E8 /* fifteen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA032B6C6D9F003D59E8 /* fifteen.wav */; };
@@ -44,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F243D462B756C4800BC529E /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
 		9F26480E2B65C9FC00840A01 /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 		9F2648102B65CD0000840A01 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		9F2648122B65D44A00840A01 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -76,6 +84,11 @@
 		9FBB0E912B61ABE300E3290C /* WorkoutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutList.swift; sourceTree = "<group>"; };
 		9FBB0E992B61B1E900E3290C /* WorkoutRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
 		9FBB0E9C2B61B71000E3290C /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
+		9FF43BA02B75846900E25319 /* SpotifyDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyDisplay.swift; sourceTree = "<group>"; };
+		9FF43BA22B7584B200E25319 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		9FF43BAB2B75996E00E25319 /* Interval-Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Interval-Timer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9FF43BAC2B75A74400E25319 /* PlaylistPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPicker.swift; sourceTree = "<group>"; };
+		9FF43BAE2B75B25000E25319 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		9FFFBA012B6C6D9F003D59E8 /* ding x2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ding x2.wav"; sourceTree = "<group>"; };
 		9FFFBA022B6C6D9F003D59E8 /* alien.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alien.wav; sourceTree = "<group>"; };
 		9FFFBA032B6C6D9F003D59E8 /* fifteen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fifteen.wav; sourceTree = "<group>"; };
@@ -88,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF43BA62B758C9A00E25319 /* KeychainAccess in Frameworks */,
+				9FF43B9F2B7580A300E25319 /* SpotifyAPI in Frameworks */,
 				9F6456062B729B37000042DA /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +110,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F243D452B756C3100BC529E /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				9F243D462B756C4800BC529E /* SpotifyController.swift */,
+				9FF43BA02B75846900E25319 /* SpotifyDisplay.swift */,
+				9FF43BA22B7584B200E25319 /* Track.swift */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
 		9F48FE182B6966C10052A828 /* CreateRoutine */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +135,7 @@
 		9F48FE1D2B6977F50052A828 /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
+				9FF43BAC2B75A74400E25319 /* PlaylistPicker.swift */,
 				9F48FE1B2B696F910052A828 /* TimePicker.swift */,
 				9F48FE1E2B6978210052A828 /* ColorPicker.swift */,
 				9F48FE202B697B210052A828 /* SoundPicker.swift */,
@@ -155,8 +181,9 @@
 		9FBB0E792B61A60B00E3290C /* Interval Timer */ = {
 			isa = PBXGroup;
 			children = (
+				9FF43BAB2B75996E00E25319 /* Interval-Timer-Info.plist */,
 				9FBB0E8A2B61A96000E3290C /* Resources */,
-				9F64560B2B72A1C0000042DA /* Spotify */,
+				9F243D452B756C3100BC529E /* Spotify */,
 				9FBB0E892B61A62200E3290C /* Views */,
 				9FBB0E882B61A61900E3290C /* Model */,
 				9F6456072B729C34000042DA /* Interval-Timer-Info.plist */,
@@ -187,6 +214,7 @@
 				9F2F8FF82B68290200FF23A0 /* WorkoutTimer.swift */,
 				9F66B1B22B6D647900A066F3 /* AVExtensions.swift */,
 				9F66B1B42B6D655D00A066F3 /* Sound.swift */,
+				9FF43BAE2B75B25000E25319 /* Playlist.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +270,10 @@
 			dependencies = (
 			);
 			name = "Interval Timer";
+			packageProductDependencies = (
+				9FF43B9E2B7580A300E25319 /* SpotifyAPI */,
+				9FF43BA52B758C9A00E25319 /* KeychainAccess */,
+			);
 			productName = "Interval Timer";
 			productReference = 9FBB0E772B61A60B00E3290C /* Interval Timer.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +303,10 @@
 				Base,
 			);
 			mainGroup = 9FBB0E6E2B61A60B00E3290C;
+			packageReferences = (
+				9FF43B9D2B7580A300E25319 /* XCRemoteSwiftPackageReference "SpotifyAPI" */,
+				9FF43BA42B758C9A00E25319 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 9FBB0E782B61A60B00E3290C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,6 +340,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2F90012B6872A300FF23A0 /* IntervalCycleRow.swift in Sources */,
+				9FF43BA12B75846900E25319 /* SpotifyDisplay.swift in Sources */,
+				9F243D472B756C4800BC529E /* SpotifyController.swift in Sources */,
 				9F6456112B72AE09000042DA /* Track.swift in Sources */,
 				9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */,
 				9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */,
@@ -314,6 +352,7 @@
 				9FBB0E902B61A9A400E3290C /* ModelData.swift in Sources */,
 				9F48FE1A2B6967210052A828 /* WorkoutBarGraphic.swift in Sources */,
 				9F48FE1C2B696F910052A828 /* TimePicker.swift in Sources */,
+				9FF43BAF2B75B25000E25319 /* Playlist.swift in Sources */,
 				9F48FE212B697B210052A828 /* SoundPicker.swift in Sources */,
 				9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */,
 				9F2648112B65CD0000840A01 /* Interval.swift in Sources */,
@@ -327,6 +366,7 @@
 				9F2F8FF92B68290200FF23A0 /* WorkoutTimer.swift in Sources */,
 				9FBB0E8E2B61A99700E3290C /* Workout.swift in Sources */,
 				9F2648152B65D59E00840A01 /* TimerDetailView.swift in Sources */,
+				9FF43BAD2B75A74400E25319 /* PlaylistPicker.swift in Sources */,
 				9F2F8FFF2B686A8000FF23A0 /* IntervalRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +504,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Interval Timer/Preview Content\"";
 				DEVELOPMENT_TEAM = XSV4GSMY3V;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -503,6 +544,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Interval Timer/Preview Content\"";
 				DEVELOPMENT_TEAM = XSV4GSMY3V;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -552,6 +594,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FF43B9D2B7580A300E25319 /* XCRemoteSwiftPackageReference "SpotifyAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Peter-Schorn/SpotifyAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+		9FF43BA42B758C9A00E25319 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FF43B9E2B7580A300E25319 /* SpotifyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF43B9D2B7580A300E25319 /* XCRemoteSwiftPackageReference "SpotifyAPI" */;
+			productName = SpotifyAPI;
+		};
+		9FF43BA52B758C9A00E25319 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF43BA42B758C9A00E25319 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FBB0E6F2B61A60B00E3290C /* Project object */;
 }

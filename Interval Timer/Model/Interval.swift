@@ -12,7 +12,7 @@ struct Interval: Hashable, Codable {
     var time: Int
     var color: Theme
     var sound: Sound
-    var playlist: String
+    var playlist: PlaylistInfo
     
     enum IntervalType: String, CaseIterable, Codable {
         case warmUp = "Warm Up"
@@ -21,7 +21,7 @@ struct Interval: Hashable, Codable {
         case coolDown = "Cool Down"
     }
     
-    init(name: IntervalType, time: Int, color: Theme, sound: Sound, playlist: String) {
+    init(name: IntervalType, time: Int, color: Theme, sound: Sound, playlist: PlaylistInfo) {
         self.name = name
         self.time = time
         self.color = color
@@ -32,6 +32,6 @@ struct Interval: Hashable, Codable {
 
 extension Interval {
     static var defaultInterval: Interval {
-        Interval(name: .warmUp, time: 60, color: .blue, sound: .ding, playlist: "")
+        Interval(name: .warmUp, time: 60, color: .blue, sound: .ding, playlist: PlaylistInfo(name: "", uri: ""))
     }
 }

@@ -10,12 +10,14 @@ import SwiftUI
 @main
 struct Interval_TimerApp: App {
     @State private var modelData = ModelData()
+    @StateObject var spotify = SpotifyController()
     @State private var spotifyController = SpotifySDK()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(modelData)
+                .environmentObject(spotify)
                 .environmentObject(spotifyController)
                 .onOpenURL { url in
                     spotifyController.setAccessToken(from: url)

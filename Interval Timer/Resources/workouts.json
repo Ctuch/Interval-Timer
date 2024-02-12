@@ -8,28 +8,40 @@
             "time": 60,
             "color": "yellow",
             "sound": "none",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         },
         "lowInt": {
             "name": "Low Intensity",
             "time": 120,
             "color": "green",
             "sound": "ding",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         },
         "highInt": {
             "name": "High Intensity",
             "time": 30,
             "color": "red",
             "sound": "ding x2",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         },
         "coolDown": {
             "name": "Cool Down",
             "time": 20,
             "color": "blue",
             "sound": "ring",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         }
     },
     {
@@ -41,28 +53,40 @@
             "time": 2,
             "color": "yellow",
             "sound": "none",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         },
         "lowInt": {
             "name": "Low Intensity",
             "time": 5,
             "color": "green",
             "sound": "ding",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         },
         "highInt": {
             "name": "High Intensity",
             "time": 7,
             "color": "red",
             "sound": "ding x2",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         },
         "coolDown": {
             "name": "Cool Down",
             "time": 5,
             "color": "blue",
             "sound": "ring",
-            "playlist": ""
+            "playlist": {
+                "name": "",
+                "uri": ""
+            }
         }
     }
 ]
