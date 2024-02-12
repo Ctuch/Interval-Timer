@@ -14,10 +14,16 @@ struct PlaylistPicker: View {
     
     @Binding var playlist: PlaylistInfo
     
-    @State private var playlists: [Playlist<PlaylistItemsReference>] = [] //TODO: just record playlistInfo??
+    @State private var playlists: [PlaylistInfo] = []
     @State private var isLoadingPlaylists = false
     
     @State private var cancellables: Set<AnyCancellable> = []
+    
+    @State private var testPlaylists: [PlaylistInfo] = [
+        PlaylistInfo(name: "Rock all the time", uri: ""),
+        PlaylistInfo(name: "21 gun salute", uri: ""),
+        PlaylistInfo(name: "soul jams", uri: "")
+    ]
     
     var body: some View {
         VStack {
@@ -40,6 +46,12 @@ struct PlaylistPicker: View {
     }
     
     func getPlaylists() {
+        // Preview only
+        if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
+            playlists = testPlaylists
+            return
+        }
+            
         if self.playlists.count > 0 {
             return
         } else {
@@ -55,7 +67,10 @@ struct PlaylistPicker: View {
                     }
                 }, receiveValue: { playlistPage in
                     let playlists = playlistPage.items
-                    self.playlists.append(contentsOf: playlists)
+                    for playlist in playlists {
+                        self.playlists.append(PlaylistInfo(name: playlist.name, uri: playlist.uri))
+                    }
+                    
                 })
                 .store(in: &cancellables)
             //TODO: decide to filter out playlists made by spotify? Order the results?
@@ -63,6 +78,6 @@ struct PlaylistPicker: View {
     }
 }
 
-/*#Preview {
-    PlaylistPicker(playlist: .constant("Best Running Songs"))
-}*/
+#Preview {
+    PlaylistPicker(playlist: .constant(PlaylistInfo(name: "Best Running Songs", uri: "")))
+}

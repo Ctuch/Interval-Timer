@@ -32,6 +32,12 @@ struct IntervalEditView: View {
                     .frame(width: 80)
                 SoundPicker(selection: $interval.sound)
             }.frame(height: 100)
+            HStack {
+                Text("Playlist")
+                Spacer()
+                    .frame(width: 80)
+                PlaylistPicker(playlist: $interval.playlist)
+            }.frame(height: 100)
         }
         .onDisappear {
             interval.time = minutes * 60 + seconds

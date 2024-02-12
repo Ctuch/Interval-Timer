@@ -40,7 +40,7 @@
 		9FF43B9F2B7580A300E25319 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF43B9E2B7580A300E25319 /* SpotifyAPI */; };
 		9FF43BA62B758C9A00E25319 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF43BA52B758C9A00E25319 /* KeychainAccess */; };
 		9FF43BAD2B75A74400E25319 /* PlaylistPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF43BAC2B75A74400E25319 /* PlaylistPicker.swift */; };
-		9FF43BAF2B75B25000E25319 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF43BAE2B75B25000E25319 /* Playlist.swift */; };
+		9FF43BAF2B75B25000E25319 /* PlaylistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF43BAE2B75B25000E25319 /* PlaylistInfo.swift */; };
 		9FFFBA072B6C6D9F003D59E8 /* ding x2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA012B6C6D9F003D59E8 /* ding x2.wav */; };
 		9FFFBA082B6C6DA0003D59E8 /* alien.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA022B6C6D9F003D59E8 /* alien.wav */; };
 		9FFFBA092B6C6DA0003D59E8 /* fifteen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFBA032B6C6D9F003D59E8 /* fifteen.wav */; };
@@ -84,7 +84,7 @@
 		9FBB0E9C2B61B71000E3290C /* WorkoutDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetail.swift; sourceTree = "<group>"; };
 		9FF43BAB2B75996E00E25319 /* Interval-Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Interval-Timer-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9FF43BAC2B75A74400E25319 /* PlaylistPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPicker.swift; sourceTree = "<group>"; };
-		9FF43BAE2B75B25000E25319 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		9FF43BAE2B75B25000E25319 /* PlaylistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistInfo.swift; sourceTree = "<group>"; };
 		9FFFBA012B6C6D9F003D59E8 /* ding x2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ding x2.wav"; sourceTree = "<group>"; };
 		9FFFBA022B6C6D9F003D59E8 /* alien.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alien.wav; sourceTree = "<group>"; };
 		9FFFBA032B6C6D9F003D59E8 /* fifteen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fifteen.wav; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 				9F2F8FF82B68290200FF23A0 /* WorkoutTimer.swift */,
 				9F66B1B22B6D647900A066F3 /* AVExtensions.swift */,
 				9F66B1B42B6D655D00A066F3 /* Sound.swift */,
-				9FF43BAE2B75B25000E25319 /* Playlist.swift */,
+				9FF43BAE2B75B25000E25319 /* PlaylistInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 				9FBB0E902B61A9A400E3290C /* ModelData.swift in Sources */,
 				9F48FE1A2B6967210052A828 /* WorkoutBarGraphic.swift in Sources */,
 				9F48FE1C2B696F910052A828 /* TimePicker.swift in Sources */,
-				9FF43BAF2B75B25000E25319 /* Playlist.swift in Sources */,
+				9FF43BAF2B75B25000E25319 /* PlaylistInfo.swift in Sources */,
 				9F48FE212B697B210052A828 /* SoundPicker.swift in Sources */,
 				9FBB0E7B2B61A60B00E3290C /* Interval_TimerApp.swift in Sources */,
 				9F2648112B65CD0000840A01 /* Interval.swift in Sources */,
