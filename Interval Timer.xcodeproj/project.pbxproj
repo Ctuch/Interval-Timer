@@ -21,8 +21,8 @@
 		9F48FE1F2B6978210052A828 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE1E2B6978210052A828 /* ColorPicker.swift */; };
 		9F48FE212B697B210052A828 /* SoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FE202B697B210052A828 /* SoundPicker.swift */; };
 		9F6456062B729B37000042DA /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6456052B729B37000042DA /* SpotifyiOS.framework */; };
-		9F64560D2B72A1FE000042DA /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F64560C2B72A1FE000042DA /* SpotifyController.swift */; };
-		9F64560F2B72AD5D000042DA /* SpotifyDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F64560E2B72AD5D000042DA /* SpotifyDisplay.swift */; };
+		9F64560D2B72A1FE000042DA /* SpotifySDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F64560C2B72A1FE000042DA /* SpotifySDK.swift */; };
+		9F64560F2B72AD5D000042DA /* SpotifyPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F64560E2B72AD5D000042DA /* SpotifyPlaybackView.swift */; };
 		9F6456112B72AE09000042DA /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6456102B72AE09000042DA /* Track.swift */; };
 		9F66B1B32B6D647900A066F3 /* AVExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B1B22B6D647900A066F3 /* AVExtensions.swift */; };
 		9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B1B42B6D655D00A066F3 /* Sound.swift */; };
@@ -60,8 +60,8 @@
 		9F6456052B729B37000042DA /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		9F6456072B729C34000042DA /* Interval-Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Interval-Timer-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9F6456082B729E23000042DA /* Interval Timer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Interval Timer-Bridging-Header.h"; sourceTree = "<group>"; };
-		9F64560C2B72A1FE000042DA /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
-		9F64560E2B72AD5D000042DA /* SpotifyDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyDisplay.swift; sourceTree = "<group>"; };
+		9F64560C2B72A1FE000042DA /* SpotifySDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifySDK.swift; sourceTree = "<group>"; };
+		9F64560E2B72AD5D000042DA /* SpotifyPlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlaybackView.swift; sourceTree = "<group>"; };
 		9F6456102B72AE09000042DA /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		9F66B1B22B6D647900A066F3 /* AVExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVExtensions.swift; sourceTree = "<group>"; };
 		9F66B1B42B6D655D00A066F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 		9F64560B2B72A1C0000042DA /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
-				9F64560C2B72A1FE000042DA /* SpotifyController.swift */,
-				9F64560E2B72AD5D000042DA /* SpotifyDisplay.swift */,
+				9F64560C2B72A1FE000042DA /* SpotifySDK.swift */,
+				9F64560E2B72AD5D000042DA /* SpotifyPlaybackView.swift */,
 				9F6456102B72AE09000042DA /* Track.swift */,
 			);
 			path = Spotify;
@@ -307,9 +307,9 @@
 				9F6456112B72AE09000042DA /* Track.swift in Sources */,
 				9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */,
 				9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */,
-				9F64560F2B72AD5D000042DA /* SpotifyDisplay.swift in Sources */,
+				9F64560F2B72AD5D000042DA /* SpotifyPlaybackView.swift in Sources */,
 				9FBB0E922B61ABE300E3290C /* WorkoutList.swift in Sources */,
-				9F64560D2B72A1FE000042DA /* SpotifyController.swift in Sources */,
+				9F64560D2B72A1FE000042DA /* SpotifySDK.swift in Sources */,
 				9FBB0E7D2B61A60B00E3290C /* ContentView.swift in Sources */,
 				9FBB0E902B61A9A400E3290C /* ModelData.swift in Sources */,
 				9F48FE1A2B6967210052A828 /* WorkoutBarGraphic.swift in Sources */,

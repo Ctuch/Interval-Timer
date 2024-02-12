@@ -9,10 +9,16 @@ import Foundation
 import Combine
 
 
-class SpotifyController: NSObject, ObservableObject {
-    static let sharedSpotify = SpotifyController()
+class SpotifySDK: NSObject, ObservableObject {
     
-    let spotifyClientID = "" // Your Client ID
+    private static let clientId: String = {
+          if let clientId = ProcessInfo.processInfo
+                  .environment["CLIENT_ID"] {
+              return clientId
+          }
+          fatalError("Could not find 'CLIENT_ID' in environment variables")
+      }()
+    
     let spotifyRedirectURL = URL(string:"spotify-ios-quick-start://spotify-login-callback")!
         
     var accessToken: String? = nil
@@ -43,7 +49,7 @@ class SpotifyController: NSObject, ObservableObject {
     }
         
     lazy var configuration = SPTConfiguration(
-        clientID: spotifyClientID,
+        clientID: SpotifySDK.clientId,
         redirectURL: spotifyRedirectURL
     )
 
@@ -82,7 +88,7 @@ class SpotifyController: NSObject, ObservableObject {
     }
 }
 
-extension SpotifyController: SPTAppRemoteDelegate {
+extension SpotifySDK: SPTAppRemoteDelegate {
     func appRemoteDidEstablishConnection(_ appRemote: SPTAppRemote) {
         self.appRemote = appRemote
         self.appRemote.playerAPI?.delegate = self
@@ -103,7 +109,7 @@ extension SpotifyController: SPTAppRemoteDelegate {
     }
 }
 
-extension SpotifyController: SPTAppRemotePlayerStateDelegate {
+extension SpotifySDK: SPTAppRemotePlayerStateDelegate {
     func playerStateDidChange(_ playerState: SPTAppRemotePlayerState) {
         print("state changed")
         currentSong.name = playerState.track.name

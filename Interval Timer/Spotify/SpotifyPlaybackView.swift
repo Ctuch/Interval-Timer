@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SpotifyDisplay: View {
-    @EnvironmentObject var spotifyController: SpotifyController
+struct SpotifyPlaybackView: View {
+    @EnvironmentObject var spotifyController: SpotifySDK
     
     
     var body: some View {
@@ -60,5 +60,5 @@ struct SpotifyDisplay: View {
 }
 
 #Preview {
-    SpotifyDisplay()
+    SpotifyPlaybackView()
 }
