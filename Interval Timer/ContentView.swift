@@ -8,6 +8,7 @@
 import SwiftUI
 import SpotifyWebAPI
 import Combine
+import AVFAudio
 
 struct ContentView: View {
     
@@ -18,11 +19,23 @@ struct ContentView: View {
     var body: some View {
         WorkoutList()
             .onAppear {
+                setAudioSettings()
+                
                 if !spotify.isAuthorized {
                     spotify.authorize()
                 }
             }
             .onOpenURL(perform: handleURL(_:))
+    }
+    
+    func setAudioSettings() {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.ambient, mode: .default, options: [.mixWithOthers])
+            try audioSession.setActive(true)
+        } catch {
+            print("Failed to set audio category")
+        }
     }
     
     func handleURL(_ url: URL) {

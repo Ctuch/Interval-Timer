@@ -9,8 +9,8 @@
             "color": "yellow",
             "sound": "none",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Highway to Yell",
+                "uri": "spotify:playlist:37i9dQZF1DXdF699XuZIvg"
             }
         },
         "lowInt": {
@@ -19,8 +19,8 @@
             "color": "green",
             "sound": "ding",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Uplifting Soul Classics",
+                "uri": "spotify:playlist:37i9dQZF1DWTx0xog3gN3q"
             }
         },
         "highInt": {
@@ -29,8 +29,8 @@
             "color": "red",
             "sound": "ding x2",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Dirty Rock",
+                "uri": "spotify:playlist:37i9dQZF1DWY6vTWIdZ54A"
             }
         },
         "coolDown": {
@@ -39,8 +39,8 @@
             "color": "blue",
             "sound": "ring",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Mellow Classics",
+                "uri": "spotify:playlist:37i9dQZF1DWTQwRw56TKNc"
             }
         }
     },
@@ -54,8 +54,8 @@
             "color": "yellow",
             "sound": "none",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Boobear runz",
+                "uri": "spotify:playlist:1IgV6l2pisdrkzyPuLvPOH"
             }
         },
         "lowInt": {
@@ -64,8 +64,8 @@
             "color": "green",
             "sound": "ding",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Uplifting Soul Classics",
+                "uri": "spotify:playlist:37i9dQZF1DWTx0xog3gN3q"
             }
         },
         "highInt": {
@@ -74,8 +74,8 @@
             "color": "red",
             "sound": "ding x2",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Dirty Rock",
+                "uri": "spotify:playlist:37i9dQZF1DWY6vTWIdZ54A"
             }
         },
         "coolDown": {
@@ -84,8 +84,8 @@
             "color": "blue",
             "sound": "ring",
             "playlist": {
-                "name": "",
-                "uri": ""
+                "name": "Mellow Classics",
+                "uri": "spotify:playlist:37i9dQZF1DWTQwRw56TKNc"
             }
         }
     }

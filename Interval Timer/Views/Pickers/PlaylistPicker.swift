@@ -39,7 +39,9 @@ struct PlaylistPicker: View {
                         Text(playlist.name)
                             .tag(PlaylistInfo(name: playlist.name, uri: playlist.uri))
                     }
-                }.pickerStyle(.menu)
+                }
+                .pickerStyle(.menu)
+                .labelsHidden()
             }
         }
         .onAppear(perform: getPlaylists)
@@ -68,6 +70,7 @@ struct PlaylistPicker: View {
                 }, receiveValue: { playlistPage in
                     let playlists = playlistPage.items
                     for playlist in playlists {
+                        print(playlist.name, playlist.uri)
                         self.playlists.append(PlaylistInfo(name: playlist.name, uri: playlist.uri))
                     }
                     
