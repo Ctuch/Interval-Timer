@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct Interval_TimerApp: App {
     @State private var modelData = ModelData()
-    @StateObject var spotify = SpotifyController()
+    @StateObject var spotify = SpotifyWeb()
     @State private var spotifyController = SpotifySDK()
     
     var body: some Scene {

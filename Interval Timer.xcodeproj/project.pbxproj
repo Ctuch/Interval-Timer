@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F243D472B756C4800BC529E /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243D462B756C4800BC529E /* SpotifyController.swift */; };
+		9F243D472B756C4800BC529E /* SpotifyWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243D462B756C4800BC529E /* SpotifyWeb.swift */; };
 		9F26480F2B65C9FC00840A01 /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F26480E2B65C9FC00840A01 /* TimerCircleView.swift */; };
 		9F2648112B65CD0000840A01 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2648102B65CD0000840A01 /* Interval.swift */; };
 		9F2648132B65D44A00840A01 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2648122B65D44A00840A01 /* Theme.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F243D462B756C4800BC529E /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
+		9F243D462B756C4800BC529E /* SpotifyWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyWeb.swift; sourceTree = "<group>"; };
 		9F26480E2B65C9FC00840A01 /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 		9F2648102B65CD0000840A01 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		9F2648122B65D44A00840A01 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 			children = (
 				9F64560E2B72AD5D000042DA /* SpotifyPlaybackView.swift */,
 				9F64560C2B72A1FE000042DA /* SpotifySDK.swift */,
-				9F243D462B756C4800BC529E /* SpotifyController.swift */,
+				9F243D462B756C4800BC529E /* SpotifyWeb.swift */,
 				9FB318C52B7AD8C3002371D1 /* Track.swift */,
 			);
 			path = Spotify;
@@ -327,7 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2F90012B6872A300FF23A0 /* IntervalCycleRow.swift in Sources */,
-				9F243D472B756C4800BC529E /* SpotifyController.swift in Sources */,
+				9F243D472B756C4800BC529E /* SpotifyWeb.swift in Sources */,
 				9F66B1B52B6D655D00A066F3 /* Sound.swift in Sources */,
 				9FBB0E9D2B61B71000E3290C /* WorkoutDetail.swift in Sources */,
 				9F64560F2B72AD5D000042DA /* SpotifyPlaybackView.swift in Sources */,

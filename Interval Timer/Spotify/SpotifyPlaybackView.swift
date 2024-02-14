@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct SpotifyPlaybackView: View {
-    @EnvironmentObject var spotifyController: SpotifySDK
+    @EnvironmentObject var spotifySDK: SpotifySDK
     
     
     var body: some View {
         VStack {
-            Text(spotifyController.currentSong.name)
+            Text(spotifySDK.currentSong.name)
                 .font(.title)
-            Text(spotifyController.currentSong.artist)
+            Text(spotifySDK.currentSong.artist)
                 .foregroundColor(.gray)
                 .font(.title2)
             HStack {
                 Button {
-                    spotifyController.appRemote.playerAPI?.skip(toPrevious: nil)
+                    spotifySDK.appRemote.playerAPI?.skip(toPrevious: nil)
                 } label: {
                     Image(systemName: "backward.fill")
                         .resizable()
@@ -29,14 +29,14 @@ struct SpotifyPlaybackView: View {
                 .buttonStyle(.plain)
                 
                 Button {
-                    if (spotifyController.isPaused) {
-                        spotifyController.appRemote.playerAPI?.resume(nil)
+                    if (spotifySDK.isPaused) {
+                        spotifySDK.appRemote.playerAPI?.resume(nil)
                     }
                     else {
-                        spotifyController.appRemote.playerAPI?.pause(nil)
+                        spotifySDK.appRemote.playerAPI?.pause(nil)
                     }
                 } label: {
-                    Image(systemName: spotifyController.isPaused ? "play.fill" : "pause.fill")
+                    Image(systemName: spotifySDK.isPaused ? "play.fill" : "pause.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 }
@@ -44,7 +44,7 @@ struct SpotifyPlaybackView: View {
                 .padding()
                 
                 Button {
-                    spotifyController.appRemote.playerAPI?.skip(toNext: nil) //Can add callbacks!
+                    spotifySDK.appRemote.playerAPI?.skip(toNext: nil) //Can add callbacks!
                 } label: {
                     Image(systemName: "forward.fill")
                         .resizable()

@@ -25,6 +25,8 @@ class SpotifySDK: NSObject, ObservableObject {
     
     @Published var currentSong = Track(name: "Test name", artist: "Test artist")
     @Published var isPaused = false
+    @Published var playedSongs: Set<String> = Set<String>()
+    private var previousSongUri = ""
     
     var playURI = ""
     
@@ -111,10 +113,16 @@ extension SpotifySDK: SPTAppRemoteDelegate {
 
 extension SpotifySDK: SPTAppRemotePlayerStateDelegate {
     func playerStateDidChange(_ playerState: SPTAppRemotePlayerState) {
-        print("state changed")
         currentSong.name = playerState.track.name
         currentSong.artist = playerState.track.artist.name
         isPaused = playerState.isPaused
+        let uri = playerState.track.uri
+        
+        if (previousSongUri != uri && playedSongs.contains(playerState.track.uri)) {
+            appRemote.playerAPI?.skip(toNext: nil)
+        }
+        previousSongUri = uri
+        playedSongs.insert(playerState.track.uri)
         print(currentSong.name, currentSong.artist)
     }
 }

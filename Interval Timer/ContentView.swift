@@ -12,7 +12,7 @@ import AVFAudio
 
 struct ContentView: View {
     
-    @EnvironmentObject var spotify: SpotifyController
+    @EnvironmentObject var spotify: SpotifyWeb
     
     @State private var cancellables: Set<AnyCancellable> = []
     

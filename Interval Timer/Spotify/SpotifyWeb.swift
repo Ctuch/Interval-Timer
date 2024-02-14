@@ -12,7 +12,7 @@ import SwiftUI
 import KeychainAccess
 import SpotifyWebAPI
 
-final class SpotifyController: ObservableObject {
+final class SpotifyWeb: ObservableObject {
     
     private static let clientId: String = {
         if let clientId = ProcessInfo.processInfo
@@ -44,8 +44,8 @@ final class SpotifyController: ObservableObject {
     
     let api = SpotifyAPI(
         authorizationManager: AuthorizationCodeFlowManager(
-            clientId: SpotifyController.clientId,
-            clientSecret: SpotifyController.clientSecret
+            clientId: SpotifyWeb.clientId,
+            clientSecret: SpotifyWeb.clientSecret
         )
     )
     

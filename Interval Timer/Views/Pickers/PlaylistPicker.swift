@@ -10,7 +10,7 @@ import Combine
 import SpotifyWebAPI
 
 struct PlaylistPicker: View {
-    @EnvironmentObject var spotify: SpotifyController
+    @EnvironmentObject var spotify: SpotifyWeb
     
     @Binding var playlist: PlaylistInfo
     
@@ -70,7 +70,6 @@ struct PlaylistPicker: View {
                 }, receiveValue: { playlistPage in
                     let playlists = playlistPage.items
                     for playlist in playlists {
-                        print(playlist.name, playlist.uri)
                         self.playlists.append(PlaylistInfo(name: playlist.name, uri: playlist.uri))
                     }
                     

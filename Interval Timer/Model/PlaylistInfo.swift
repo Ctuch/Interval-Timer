@@ -10,4 +10,7 @@ import Foundation
 struct PlaylistInfo: Hashable, Codable {
     var name: String
     var uri: String
+    var availableSongs: [String]?
+    
+    private enum CodingKeys: String, CodingKey { case name, uri }
 }
