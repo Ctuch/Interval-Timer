@@ -15,9 +15,9 @@ struct WorkoutList: View {
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(modelData.workouts) { workout in
+                ForEach(Array(modelData.workouts.enumerated()), id: \.offset) { index, workout in
                     NavigationLink {
-                        TimerDetailView(workout: workout)
+                        TimerDetailView(index: index)
                     } label: {
                         WorkoutRow(workout: workout)
                     }

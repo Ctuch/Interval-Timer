@@ -46,8 +46,8 @@ final class WorkoutTimer: ObservableObject {
     }
     
     private func changeToInterval(at index: Int) {
-        guard index < intervals.count else { return }
         intervalIndex = index
+        guard index < intervals.count else { return }
         secondsRemaining = intervals[index].time
         lengthInSeconds = secondsRemaining
         startDate = Date()
