@@ -53,7 +53,7 @@ struct WorkoutDetail: View {
         .buttonStyle(.plain)
         .sheet(isPresented: $isPresentingEditInterval) {
             NavigationStack {
-                IntervalEditView(interval: $editingInterval, minutes: .constant(Interval.defaultInterval.time / 60), seconds: .constant(Interval.defaultInterval.time % 60))
+                IntervalEditView(interval: $editingInterval)
                     .navigationTitle("\(editingInterval.name.rawValue)")
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {

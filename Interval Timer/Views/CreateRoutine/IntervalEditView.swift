@@ -9,8 +9,6 @@ import SwiftUI
 
 struct IntervalEditView: View {
     @Binding var interval: Interval
-    @Binding var minutes: Int
-    @Binding var seconds: Int
     
     var body: some View {
         List {
@@ -18,7 +16,7 @@ struct IntervalEditView: View {
                 Text("Duration")
                 Spacer()
                     .frame(width: 50)
-                TimePicker(currentMins: $minutes, currentSecs: $seconds)
+                TimePicker(currentMins: $interval.minutes, currentSecs: $interval.seconds)
             }.frame(height: 150)
             HStack {
                 Text("Color")
@@ -39,12 +37,9 @@ struct IntervalEditView: View {
                 PlaylistPicker(playlist: $interval.playlist)
             }.frame(height: 100)
         }
-        .onDisappear {
-            interval.time = minutes * 60 + seconds
-        }
     }
 }
 
 #Preview {
-    IntervalEditView(interval: .constant(Interval.defaultInterval), minutes: .constant(Interval.defaultInterval.time / 60), seconds: .constant(Interval.defaultInterval.time % 60))
+    IntervalEditView(interval: .constant(Interval.defaultInterval))
 }
