@@ -25,6 +25,7 @@ struct NewWorkout: View {
                     ToolbarItem(placement: .confirmationAction) {
                         Button("Add") {
                             isPresentingNewWorkoutView = false
+                            newWorkout.id = UUID().uuidString
                             modelData.workouts.append(newWorkout)
                             write(array: modelData.workouts, filename: "workouts.json")
                         }

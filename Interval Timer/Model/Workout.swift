@@ -8,7 +8,7 @@
 import Foundation
 
 struct Workout: Hashable, Codable, Identifiable {
-    var id: Int
+    var id: String
     var name: String
     var numCycles: Int
     var warmUp: Interval
@@ -30,7 +30,7 @@ struct Workout: Hashable, Codable, Identifiable {
         return temp
     }
     
-    init(id: Int = 0, name: String = "", duration: Int = 300, numCycles: Int = 1, warmUp: Interval, lowInt: Interval, highInt: Interval, coolDown: Interval) {
+    init(id: String = "", name: String = "", duration: Int = 300, numCycles: Int = 1, warmUp: Interval, lowInt: Interval, highInt: Interval, coolDown: Interval) {
         self.id = id
         self.name = name
         self.numCycles = numCycles
@@ -50,9 +50,9 @@ struct Workout: Hashable, Codable, Identifiable {
 
 extension Workout {
     static var defaultWorkout: Workout {
-        Workout(warmUp: Interval(name: .warmUp, time: 60, color: .yellow, sound: .none, playlist: PlaylistInfo(name: "", uri: "")),
-                lowInt: Interval(name: .lowInt, time: 120, color: .green, sound: .ding2, playlist: PlaylistInfo(name: "", uri: "")),
-                highInt: Interval(name: .highInt, time: 60, color: .red, sound: .ding, playlist: PlaylistInfo(name: "", uri: "")),
-                coolDown: Interval(name: .coolDown, time: 60, color: .blue, sound: .ring, playlist: PlaylistInfo(name: "", uri: "")))
+        Workout(warmUp: Interval(name: .warmUp, minutes: 1, seconds: 0, color: .yellow, sound: .none, playlist: PlaylistInfo(name: "", uri: "")),
+                lowInt: Interval(name: .lowInt, minutes: 2, seconds: 0, color: .green, sound: .ding2, playlist: PlaylistInfo(name: "", uri: "")),
+                highInt: Interval(name: .highInt, minutes: 1, seconds: 0, color: .red, sound: .ding, playlist: PlaylistInfo(name: "", uri: "")),
+                coolDown: Interval(name: .coolDown, minutes: 1, seconds: 0, color: .blue, sound: .ring, playlist: PlaylistInfo(name: "", uri: "")))
     }
 }
